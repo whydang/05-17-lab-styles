@@ -1,7 +1,23 @@
 <resources>
 
     <!-- TODO: Add own styles here! -->
+    <style name="TextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:height">50dp</item>
+        <item name="android:textColor">#4b2e83</item>
 
+    </style>
+
+    <style name="Label" parent="@style/TextStyle">
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="Gold" parent="@style/Label">
+        <item name="android:background">#b7a57a</item>
+
+    </style>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">

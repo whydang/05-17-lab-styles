@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/TextStyle"
     tools:context="edu.uw.stylelab.MainActivity">
 
     <ImageView
@@ -26,15 +27,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logo"
         >
-
         <TextView
             android:id="@+id/label1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            style="@style/Label"
             android:text="@string/label1"
             />
 
@@ -43,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/label1"
             android:layout_alignBaseline="@id/label1"
-            android:textSize="18sp"
             android:text="@string/value1"
             />
 
@@ -54,8 +52,7 @@
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_below="@id/label1"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            style="@style/Label"
             android:text="@string/label2"
             />
 
@@ -64,7 +61,6 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/label2"
             android:layout_alignBaseline="@id/label2"
-            android:textSize="18sp"
             android:text="@string/value2"
             />
 
@@ -75,8 +71,7 @@
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_below="@id/label2"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            style="@style/Label"
             android:text="@string/label3"
             />
 
@@ -85,7 +80,6 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/label3"
             android:layout_alignBaseline="@id/label3"
-            android:textSize="18sp"
             android:text="@string/value3"
             />
 
@@ -98,5 +92,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/buttonLabel"
         />
+
+
 
 </RelativeLayout>
